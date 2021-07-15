@@ -22,11 +22,25 @@ section .sec_p {
 }
 
 section .sec_con .items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  overflow: hidden;
   text-align: center;
+}
+
+section .sec_con .items:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+section .sec_con .items li {
+  float: left;
+  margin-top: 60px;
+}
+
+section .sec_con .items li:first-child,
+section .sec_con .items li:nth-of-type(2),
+section .sec_con .items li:nth-of-type(3) {
+  margin-top: 0px;
 }
 
 section .sec_con .items .text .text_tit,
@@ -44,5 +58,59 @@ section .sec_con .items .text .text_tit {
 
 section .sec_con .items .text .text_p {
   margin-top: 16px;
+  font-size: 24px;
+}
+
+section .sec_con .sub_con .banner {
+  position: absolute;
+  bottom: 0;
+  color: #111;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+section .description {
+  width: 1110px;
+  margin: 0 auto;
+  margin-top: 140px;
+}
+
+section .description .row {
+  width: 100%;
+  border-top: 1px solid #d8d8d8;
+  padding: 72px 0;
+}
+
+section .description .row:first-child {
+  border-top: 2px solid #111;
+}
+
+section .description .row:last-child {
+  padding: 72px 0 0 0;
+}
+
+section .description .row .row_text_tit,
+section .description .row .row_text_sub_tit,
+section .description .row .row_text_p {
+  color: #111;
+}
+
+section .description .row .row_text_tit {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+section .description .row .row_text_tit span {
+  font-size: 24px;
+}
+
+section .description .row .row_text_sub_tit {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 48px;
+}
+
+section .description .row .row_text_p {
+  margin-top: 40px;
   font-size: 24px;
 }
