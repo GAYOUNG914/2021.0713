@@ -8,26 +8,43 @@
     <link rel="stylesheet" href="./css/component.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
   </head>
   <body>
-    <header id="header">
-      <nav id="nav">
+    <div class="main_banner">
+      <header>
         <h1>
           <a href="#"><img src="./img/korfin-logo-black-pc.png" alt="top_logo" /></a>
         </h1>
-        <ul class="nav">
-          <li><a href="#">about</a></li>
-          <li><a href="./index_member.html">member</a></li>
-          <li><a href="#">news</a></li>
-        </ul>
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="#">ABOUT</a>
+              <ul class="sub_gnb">
+                <li><a href="#">협회장 인사말</a></li>
+                <li><a href="#">설립목적 및 비전</a></li>
+                <li><a href="#">주요사업</a></li>
+                <li><a href="#">조직도</a></li>
+                <li><a href="#">임원사</a></li>
+                <li><a href="#">자문위원</a></li>
+                <li><a href="#">자문변호사</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li><a href="./index_member.html">MEMBER</a></li>
+            <li><a href="#">NEWS</a></li>
+          </ul>
+        </nav>
         <div class="switch_lang">
           <span>KR</span>
           <span></span>
           <span>EN</span>
         </div>
-      </nav>
+      </header>
+      <div class="sub_gnb_bg"></div>
       <h2 class="page_title">about</h2>
-    </header>
+    </div>
     <main>
       <section id="first">
         <div class="sec_tit_wrap">
@@ -44,44 +61,52 @@
               <!--복붙-->
               <div class="icon"><img src="./img/icon-found-mo-01.png" alt="sec1_icon1" /></div>
               <div class="text">
-                <h5 class="text_tit">창조적 라이프스타일</h5>
-                <p class="text_p">
-                  안전하고 편리한 디지털 금융<br />
-                  서비스를 통한 국민 생활의 향상
-                </p>
+                <dl>
+                  <dt class="text_tit">창조적 라이프스타일</dt>
+                  <dd class="text_p">
+                    안전하고 편리한 디지털 금융<br />
+                    서비스를 통한 국민 생활의 향상
+                  </dd>
+                </dl>
               </div>
             </li>
             <li>
               <!--복붙-->
               <div class="icon"><img src="./img/icon-found-mo-02.png" alt="sec1_icon2" /></div>
               <div class="text">
-                <h5 class="text_tit">新성장동력 확보</h5>
-                <p class="text_p">
-                  디지털·비대면 시대에 맞는<br />
-                  금융산업의 새로운 성장동력 확보
-                </p>
+                <dl>
+                  <dt class="text_tit">新성장동력 확보</dt>
+                  <dd class="text_p">
+                    디지털·비대면 시대에 맞는<br />
+                    금융산업의 새로운 성장동력 확보
+                  </dd>
+                </dl>
               </div>
             </li>
             <li>
               <!--복붙-->
               <div class="icon"><img src="./img/icon-found-mo-03.png" alt="sec1_icon3" /></div>
               <div class="text">
-                <h5 class="text_tit">소통 활성화</h5>
-                <p class="text_p">
-                  업계와 기관 간의 적극적이고<br />
-                  효율적인 소통 창구 역할
-                </p>
+                <dl>
+                  <dt class="text_tit">소통 활성화</dt>
+                  <dd class="text_p">
+                    업계와 기관 간의 적극적이고<br />
+                    효율적인 소통 창구 역할
+                  </dd>
+                </dl>
               </div>
             </li>
             <li>
               <!--복붙-->
               <div class="icon"><img src="./img/icon-found-mo-04.png" alt="sec1_icon4" /></div>
               <div class="text">
-                <h5 class="text_tit">신수익모델 & 글로벌 경쟁력 확보</h5>
-                <p class="text_p">
-                  창의적이고 혁신적인 글로벌 <br />
-                  핀테크 기업 육성
-                </p>
+                <dl>
+                  <dt class="text_tit">신수익모델 & 글로벌 경쟁력 확보</dt>
+                  <dd class="text_p">
+                    창의적이고 혁신적인 글로벌 <br />
+                    핀테크 기업 육성
+                  </dd>
+                </dl>
               </div>
             </li>
           </ul>
@@ -102,7 +127,7 @@
             <ul class="items">
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-vision-01.png" alt="sec2_icon1" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">
                     국민이 체감할 수 있는 <br />
@@ -112,7 +137,7 @@
               </li>
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-vision-02.png" alt="sec2_icon2" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">
                     금융 혁신으로 인한<br />
@@ -122,7 +147,7 @@
               </li>
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-vision-03.png" alt="sec2_icon3" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">
                     핀테크 기업-국민 간의<br />
@@ -140,7 +165,7 @@
             <ul class="items">
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-ecosystem-01.png" alt="sec2_icon1" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">
                     선순환 구조의 디지털<br />
@@ -150,7 +175,7 @@
               </li>
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-ecosystem-02.png" alt="sec2_icon2" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">
                     선순환 구조의 디지털 <br />
@@ -160,7 +185,7 @@
               </li>
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-ecosystem-03.png" alt="sec2_icon3" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">
                     핀테크 산업 활성화<br />
@@ -174,6 +199,9 @@
       </section>
     </main>
     <footer>
+      <div class="back_to_top">
+        <a href="#header"><img src="./img/button-floating-top.png" alt="backToTop_icon" /></a>
+      </div>
       <div class="footer_inner">
         <div class="left">
           <ul class="information">

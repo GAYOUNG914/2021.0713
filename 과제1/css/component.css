@@ -32,6 +32,12 @@ section .sec_con .items:after {
   clear: both;
 }
 
+section .sec_con .items:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 section .sec_con .items li {
   float: left;
   margin-top: 60px;
@@ -54,6 +60,7 @@ section .sec_con .items .text .text_p {
 section .sec_con .items .text .text_tit {
   margin-top: 40px;
   font-size: 32px;
+  font-weight: bold;
 }
 
 section .sec_con .items .text .text_p {

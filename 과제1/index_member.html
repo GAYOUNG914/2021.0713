@@ -8,26 +8,43 @@
     <link rel="stylesheet" href="./css/component.css" />
     <link rel="stylesheet" href="./css/layout.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/common.js"></script>
   </head>
   <body>
-    <header id="header" class="header_member">
-      <nav id="nav">
+    <div class="main_banner main_banner2">
+      <header class="header_member">
         <h1>
           <a href="#"><img src="./img/korfin-logo-black-pc.png" alt="top_logo" /></a>
         </h1>
-        <ul class="nav">
-          <li><a href="./index_about.html">about</a></li>
-          <li><a href="#">member</a></li>
-          <li><a href="#">news</a></li>
-        </ul>
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="./index_about.html">ABOUT</a>
+              <ul class="sub_gnb">
+                <li><a href="#">협회장 인사말</a></li>
+                <li><a href="#">설립목적 및 비전</a></li>
+                <li><a href="#">주요사업</a></li>
+                <li><a href="#">조직도</a></li>
+                <li><a href="#">임원사</a></li>
+                <li><a href="#">자문위원</a></li>
+                <li><a href="#">자문변호사</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li><a href="./index_member.html">MEMBER</a></li>
+            <li><a href="#">NEWS</a></li>
+          </ul>
+        </nav>
         <div class="switch_lang">
           <span>KR</span>
           <span></span>
           <span>EN</span>
         </div>
-      </nav>
-      <h2 class="page_title">member</h2>
-    </header>
+      </header>
+      <div class="sub_gnb_bg"></div>
+      <h2 class="page_title">about</h2>
+    </div>
     <main>
       <section id="first">
         <div class="sec_tit_wrap">
@@ -60,40 +77,40 @@
               <div class="icon">
                 <span class="icon_bg"></span>
               </div>
-              <div class="text">
-                <h5 class="text_tit">정회원</h5>
-                <p class="text_p">
+              <dl class="text">
+                <dt class="text_tit">정회원</dt>
+                <dd class="text_p">
                   핀테크 사업을 영위하는<br />
                   법인 또는 개인
-                </p>
-              </div>
+                </dd>
+              </dl>
             </li>
             <li>
               <!--복붙-->
               <div class="icon">
                 <span class="icon_bg"></span>
               </div>
-              <div class="text">
-                <h5 class="text_tit">특별회원</h5>
-                <p class="text_p">
+              <dl class="text">
+                <dt class="text_tit">특별회원</dt>
+                <dd class="text_p">
                   핀테크 사업을 영위하는 법인 또는 개인<br />
                   핀테크 산업의 진흥과 관련된<br />
                   업무를 수행하는 법인 또는 개인
-                </p>
-              </div>
+                </dd>
+              </dl>
             </li>
             <li>
               <!--복붙-->
               <div class="icon">
                 <span class="icon_bg"></span>
               </div>
-              <div class="text">
-                <h5 class="text_tit">준회원</h5>
-                <p class="text_p">
+              <dl class="text">
+                <dt class="text_tit">준회원</dt>
+                <dd class="text_p">
                   핀테크 산업과 관련된<br />
                   법인 또는 개인
-                </p>
-              </div>
+                </dd>
+              </dl>
             </li>
           </ul>
         </div>
@@ -108,14 +125,14 @@
             <ul class="items">
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-benefit-01.png" alt="sec2_icon1" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">총회 의결 권한</p>
                 </div>
               </li>
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-benefit-02.png" alt="sec2_icon2" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">
                     임원사로 선임<br />
@@ -125,14 +142,14 @@
               </li>
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-benefit-03.png" alt="sec2_icon3" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">협회 분과 참여</p>
                 </div>
               </li>
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-benefit-04.png" alt="sec2_icon4" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">
                     사업 애로사항 공동 타계<br />
@@ -142,7 +159,7 @@
               </li>
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-benefit-05.png" alt="sec2_icon5" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">
                     통계·정책·업계동향 등의<br />
@@ -152,7 +169,7 @@
               </li>
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-benefit-06.png" alt="sec2_icon6" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">
                     사업 관련 민원 해결,<br />
@@ -162,7 +179,7 @@
               </li>
               <li>
                 <!--복붙-->
-                <div class="icon"><img src="./img/icon-benefit-07.png" alt="sec2_icon7" /></div>
+                <div class="icon"></div>
                 <div class="text">
                   <p class="text_p">
                     협회 사업에 참여<br />
@@ -179,18 +196,18 @@
             </div>
             <div class="description">
               <div class="row">
-                <div class="row_text">
-                  <h5 class="row_text_tit">회원 가입비</h5>
-                  <p class="row_text_p">
+                <dl class="row_text">
+                  <dt class="row_text_tit">회원 가입비</dt>
+                  <dd class="row_text_p">
                     회원이 되고자 하는 자는 가입비 100만원을 가입 승인일로부터 기한 내에 협회에 납부하여야 한다.
-                  </p>
-                </div>
+                  </dd>
+                </dl>
               </div>
               <div class="row">
-                <div class="row_text">
-                  <h5 class="row_text_tit">스타트업 가입비</h5>
-                  <p class="row_text_p">설립 3년 미만 스타트업 기업과 특별회원은 가입비를 면제한다.</p>
-                </div>
+                <dl class="row_text">
+                  <dt class="row_text_tit">스타트업 가입비</dt>
+                  <dd class="row_text_p">설립 3년 미만 스타트업 기업과 특별회원은 가입비를 면제한다.</dd>
+                </dl>
               </div>
             </div>
           </div>
@@ -354,6 +371,9 @@
       </section>
     </main>
     <footer>
+      <div class="back_to_top">
+        <a href="#header"><img src="./img/button-floating-top.png" alt="backToTop_icon" /></a>
+      </div>
       <div class="footer_inner">
         <div class="left">
           <ul class="information">

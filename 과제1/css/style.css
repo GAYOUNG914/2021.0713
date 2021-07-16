@@ -97,30 +97,6 @@ select:focus {
   outline: none;
 }
 
-.mgt10 {
-  margin-top: 10px !important;
-}
-
-.mgt20 {
-  margin-top: 20px !important;
-}
-
-.mgt30 {
-  margin-top: 30px !important;
-}
-
-.mgb10 {
-  margin-bottom: 10px !important;
-}
-
-.mgb20 {
-  margin-bottom: 20px !important;
-}
-
-.mgb30 {
-  margin-bottom: 30px !important;
-}
-
 /*index_about page start*/
 /*index content(main)*/
 /*first section*/
@@ -154,12 +130,12 @@ section#second .sec_con .sub_con .banner {
 }
 
 section#second .sec_con .sub_con .banner1 {
-  margin-right: -290px;
+  margin-right: -280px;
 }
 
 section#second .sec_con .sub_con .banner2 {
   background: url(../img/img-vision-02.png) center no-repeat;
-  margin-left: -290px;
+  margin-left: -280px;
 }
 
 section#second .sec_con .sub_con .banner .banner_tit {
@@ -186,6 +162,39 @@ section#second .sec_con .sub_con .items li {
   width: calc(100% / 3);
 }
 
+/*이용자가 중심이되는 디지털 금융 혁신*/
+
+section#second .sec_con .sub_con:first-child .items li:first-child .icon {
+  height: 128px;
+  background: url(../img/icon-vision-01.png) center no-repeat;
+}
+
+section#second .sec_con .sub_con:first-child .items li:nth-of-type(2) .icon {
+  height: 128px;
+  background: url(../img/icon-vision-02.png) center no-repeat;
+}
+
+section#second .sec_con .sub_con:first-child .items li:nth-of-type(3) .icon {
+  height: 128px;
+  background: url(../img/icon-vision-03.png) center no-repeat;
+}
+
+/*창의적이고 역동적인 핀테크 생태계 조성*/
+
+section#second .sec_con .sub_con:nth-of-type(2) .items li:first-child .icon {
+  height: 128px;
+  background: url(../img/icon-ecosystem-01.png) center no-repeat;
+}
+
+section#second .sec_con .sub_con:nth-of-type(2) .items li:nth-of-type(2) .icon {
+  height: 128px;
+  background: url(../img/icon-ecosystem-02.png) center no-repeat;
+}
+
+section#second .sec_con .sub_con:nth-of-type(2) .items li:nth-of-type(3) .icon {
+  height: 128px;
+  background: url(../img/icon-ecosystem-03.png) center no-repeat;
+}
 /*index_member page start*/
 /*index content(main)*/
 /*first section*/
@@ -205,6 +214,12 @@ section#first .download {
   overflow: hidden;
   float: right;
   display: inline-block;
+}
+
+section#first .download:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 section#first .download li {
@@ -254,6 +269,12 @@ section#first .sec_con_member .items li {
   overflow: hidden;
 }
 
+section#first .sec_con_member .items li:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 section#first .sec_con_member .items li:nth-of-type(2):before,
 section#first .sec_con_member .items li:nth-of-type(3):before {
   content: "";
@@ -285,11 +306,11 @@ section#second.second_member .sec_con .sub_con {
 }
 
 section#second.second_member .sec_con .sub_con:nth-of-type(odd) .banner {
-  margin: 0 0 0 -290px;
+  margin: 0 0 0 -280px;
 }
 
 section#second.second_member .sec_con .sub_con:nth-of-type(even) .banner {
-  margin: 0 -290px 0 0;
+  margin: 0 -280px 0 0;
 }
 
 section#second.second_member .sec_con .sub_con:nth-of-type(odd) .banner .banner_tit {
@@ -315,15 +336,43 @@ section#second.second_member .sec_con .sub_con .banner3 {
 section#second.second_member .sec_con .sub_con .banner4 {
   background: url(../img/member/img-membership-04.png) center no-repeat;
 }
+/*icons*/
+section#second.second_member .sec_con .sub_con .items li .icon {
+  height: 128px;
+}
+
+section#second.second_member .sec_con .sub_con .items li:first-child .icon {
+  background: url(../img/icon-benefit-01.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(2) .icon {
+  background: url(../img/icon-benefit-02.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(3) .icon {
+  background: url(../img/icon-benefit-03.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(4) .icon {
+  background: url(../img/icon-benefit-04.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(5) .icon {
+  background: url(../img/icon-benefit-05.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(6) .icon {
+  background: url(../img/icon-benefit-06.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(7) .icon {
+  background: url(../img/icon-benefit-07.png) center no-repeat;
+}
 
 section#second.second_member .sec_con .sub_con .items li {
   height: 477px;
   padding: 100px 0;
   box-sizing: border-box;
-}
-
-section#second.second_member .sec_con .items li:nth-of-type(5) {
-  padding-top: 128px;
 }
 
 section#second.second_member .sec_con .items .text .text_p {
@@ -360,6 +409,12 @@ section#second.second_member .sec_con .sub_con .process .row_pro {
   width: 100%;
   overflow: hidden;
   margin-top: 130px;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 section#second.second_member .sec_con .sub_con .process .row_pro .left {
