@@ -104,13 +104,33 @@ section#first .sec_con {
   margin-top: 130px;
 }
 
-section#first .sec_con .items li {
+section#first .sec_con .items > li {
   width: 50%;
 }
 
-section#first .sec_con .items li:nth-of-type(3),
-section#first .sec_con .items li:nth-of-type(4) {
+section#first .sec_con .items > li:nth-of-type(3),
+section#first .sec_con .items > li:nth-of-type(4) {
   margin-top: 100px;
+}
+
+section#first.first_about .sec_con .items > li:first-child .icon {
+  height: 128px;
+  background: url(../img/icon-found-01.png) center no-repeat;
+}
+
+section#first.first_about .sec_con .items > li:nth-of-type(2) .icon {
+  height: 128px;
+  background: url(../img/icon-found-02.png) center no-repeat;
+}
+
+section#first.first_about .sec_con .items > li:nth-of-type(3) .icon {
+  height: 128px;
+  background: url(../img/icon-found-03.png) center no-repeat;
+}
+
+section#first.first_about .sec_con .items > li:nth-of-type(4) .icon {
+  height: 128px;
+  background: url(../img/icon-found-04.png) center no-repeat;
 }
 
 /*second section*/
@@ -451,8 +471,8 @@ section#second.second_member .sec_con .sub_con .process .row_pro .right .text_p 
 }
 
 section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add {
+  overflow: hidden;
   width: 100%;
-  height: 114px;
   background-color: #f4f4f4;
   border-radius: 8px;
   box-sizing: border-box;
@@ -460,22 +480,50 @@ section#second.second_member .sec_con .sub_con .process .row_pro .right .process
   margin-top: 36px;
 }
 
-section#second.second_member .sec_con .sub_con .process .row_pro:nth-of-type(4) .right .process_add tr th {
+section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* section#second.second_member .sec_con .sub_con .process .row_pro:nth-of-type(4) .right .process_add dt {
   width: 10%;
-}
-
-/* section#second.second_member .sec_con .sub_con .process .row_pro:nth-of-type(5) .right .process_add tr th {
-  width: 3%;
-}
-
-section#second.second_member .sec_con .sub_con .process .row_pro:nth-of-type(5) .right .process_add tr:first-child td {
-  width: 100%;
 } */
 
-section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add tr th,
-section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add tr td {
+section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add dd {
+  margin-left: 20px;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add dt,
+section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add dd {
   font-size: 18px;
   font-weight: normal;
   text-align: left;
-  /* display: table; */
+  float: left;
+}
+
+/*second_member banner4 right icons*/
+section#second.second_member .sub_con .process .row_pro .left .row_img .icon {
+  width: 128px;
+  height: 128px;
+}
+
+section#second.second_member .sub_con .process .row_pro:first-child .left .row_img .icon {
+  background: url(../img/icon-join-01.png) center no-repeat;
+}
+
+section#second.second_member .sub_con .process .row_pro:nth-of-type(2) .left .row_img .icon {
+  background: url(../img/icon-join-02.png) center no-repeat;
+}
+
+section#second.second_member .sub_con .process .row_pro:nth-of-type(3) .left .row_img .icon {
+  background: url(../img/icon-join-03.png) center no-repeat;
+}
+
+section#second.second_member .sub_con .process .row_pro:nth-of-type(4) .left .row_img .icon {
+  background: url(../img/icon-join-04.png) center no-repeat;
+}
+
+section#second.second_member .sub_con .process .row_pro:nth-of-type(5) .left .row_img .icon {
+  background: url(../img/icon-join-05.png) center no-repeat;
 }
