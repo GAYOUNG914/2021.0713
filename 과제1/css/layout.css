@@ -159,7 +159,7 @@ header .switch_lang span:last-child {
   margin: 0 auto;
   font-size: 96px;
   font-weight: bold;
-  margin-top: calc(320px - 90px);
+  margin-top: 230px;
   color: white;
   text-transform: uppercase;
 }

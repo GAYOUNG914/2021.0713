@@ -179,7 +179,7 @@ section#second .sec_con .sub_con .items {
 }
 
 section#second .sec_con .sub_con .items li {
-  width: calc(100% / 3);
+  width: 33.3%;
 }
 
 /*이용자가 중심이되는 디지털 금융 혁신*/
@@ -285,7 +285,7 @@ section#first .sec_con_member .items li:nth-of-type(3) .icon .icon_bg {
 }
 
 section#first .sec_con_member .items li {
-  width: calc(100% / 3);
+  width: 33.3%;
   overflow: hidden;
 }
 
@@ -304,7 +304,7 @@ section#first .sec_con_member .items li:nth-of-type(3):before {
   height: 16px;
   border-radius: 100%;
   background-color: #154eab;
-  margin-top: calc(135px - 8px);
+  margin-top: 127px;
 }
 
 section#first .sec_con_member .items li:nth-of-type(3) {
@@ -401,11 +401,11 @@ section#second.second_member .sec_con .items .text .text_p {
 
 section#second.second_member .sec_con .sub_con .description_banner3 .row .row_text {
   display: inline-block;
-  width: calc((100% - 260px) / 2);
+  width: 38%;
 }
 section#second.second_member .sec_con .sub_con .description_banner3 .row .row_text:last-child {
   display: inline-block;
-  width: 243px;
+  width: 23%;
 }
 
 section#second.second_member .sec_con .sub_con .description_banner3 .row .row_text .row_text_p {
@@ -438,8 +438,7 @@ section#second.second_member .sec_con .sub_con .process .row_pro:after {
 }
 
 section#second.second_member .sec_con .sub_con .process .row_pro .left {
-  /* width: 230px; */
-  width: calc(100% - 880px);
+  width: 20%;
   float: left;
 }
 
@@ -456,7 +455,7 @@ section#second.second_member .sec_con .sub_con .process .row_pro .left .row_img 
 
 section#second.second_member .sec_con .sub_con .process .row_pro .right {
   /* width: clac(100% - 230px); */
-  width: 880px;
+  width: 80%;
   float: left;
 }
 
