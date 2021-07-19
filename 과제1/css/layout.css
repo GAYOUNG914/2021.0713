@@ -90,12 +90,14 @@ header nav .nav > li:last-child {
 
 header nav .nav > li > a {
   position: relative;
+  display: inline-block;
+  height: 100%;
 }
 
 header nav .nav > li > a:after {
   content: "";
   position: absolute;
-  bottom: -32px;
+  bottom: 0;
   left: 0;
   display: inline-block;
   opacity: 0;
@@ -105,7 +107,7 @@ header nav .nav > li > a:after {
   transition: 0.3s;
 }
 
-header nav .nav > li > a.on:after {
+header nav .nav > li.on > a:after {
   opacity: 1;
 }
 
@@ -186,12 +188,38 @@ header .switch_lang span a {
 }
 
 header .switch_lang span:nth-of-type(2) {
+  position: relative;
   display: inline-block;
   width: 14px;
   height: 4px;
   background-color: white;
   margin-top: 41px;
   transform: translateY(3px);
+}
+
+header .switch_lang span:nth-of-type(2):after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  left: -3px;
+  top: -2px;
+  background: #fff;
+  border-radius: 100%;
+}
+
+header .switch_lang:hover span:nth-of-type(2):after {
+  animation: switch 1s ease-out infinite alternate;
+}
+
+@keyframes switch {
+  from {
+    left: -3px;
+  }
+  to {
+    left: 11px;
+  }
 }
 
 header .switch_lang span:last-child a {

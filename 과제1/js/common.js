@@ -2,7 +2,7 @@ $(function () {
   //dropdown navigation bar
   $(".nav > li").hover(
     function () {
-      $(this).find("a").addClass("on");
+      $(this).addClass("on");
       $(this).find(".sub_gnb").addClass("on");
       $(".header_bg").addClass("on");
       // $(".header_bg").hover(
@@ -21,7 +21,7 @@ $(function () {
       //   );
     },
     function () {
-      $(this).find("a").removeClass("on");
+      $(this).removeClass("on");
       $(this).find(".sub_gnb").removeClass("on");
       $(".header_bg").removeClass("on");
     }
