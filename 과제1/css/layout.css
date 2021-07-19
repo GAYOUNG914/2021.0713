@@ -210,7 +210,7 @@ header .switch_lang span:nth-of-type(2):after {
 }
 
 header .switch_lang:hover span:nth-of-type(2):after {
-  animation: switch 1s ease-out infinite alternate;
+  animation: switch 0.8s ease-out infinite;
 }
 
 @keyframes switch {
