@@ -13,7 +13,10 @@
   </head>
   <body>
     <div class="main_banner">
-      <header>
+      <header id="header">
+        <div class="header_bg">
+          <div class="line"></div>
+        </div>
         <h1>
           <a href="#"><img src="./img/korfin-logo-black-pc.png" alt="top_logo" /></a>
         </h1>
@@ -32,29 +35,43 @@
                 <li><a href="#">오시는길</a></li>
               </ul>
             </li>
-            <li><a href="./index_member.html">MEMBER</a></li>
-            <li><a href="#">NEWS</a></li>
+            <li>
+              <a href="./index_member.html">MEMBER</a>
+              <ul class="sub_gnb">
+                <li><a href="#">회원사 현황</a></li>
+                <li><a href="#">회원가입 안내</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">NEWS</a>
+              <ul class="sub_gnb">
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">회원사 소식</a></li>
+                <li><a href="#">보도자료</a></li>
+                <li><a href="#">자료실</a></li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <div class="switch_lang">
-          <span>KR</span>
+          <span><a href="#">KR</a></span>
           <span></span>
-          <span>EN</span>
+          <span><a href="#">EN</a></span>
         </div>
       </header>
-      <div class="sub_gnb_bg"></div>
+      <!-- <div class="sub_gnb_bg"></div> -->
       <h2 class="page_title">about</h2>
     </div>
     <main>
       <section id="first" class="first_about">
-        <div class="sec_tit_wrap">
-          <h3 class="sec_tit">설립목적</h3>
-        </div>
-        <p class="sec_p">
-          금융과 IT가 용광로처럼 융합되는 역동적 생태계 조성을 통해 핀테크 산업의 건전한 발전 유도합니다.<br />
-          핀테크 이용 촉진을 통해 핀테크 산업을 진행함으로서 국민생활의 향상과 국민경제 발전에 이바지함을 목적으로
-          설립되었습니다.
-        </p>
+        <dl>
+          <dt class="sec_tit">설립목적</dt>
+          <dd class="sec_p">
+            금융과 IT가 용광로처럼 융합되는 역동적 생태계 조성을 통해 핀테크 산업의 건전한 발전 유도합니다.<br />
+            핀테크 이용 촉진을 통해 핀테크 산업을 진행함으로서 국민생활의 향상과 국민경제 발전에 이바지함을 목적으로
+            설립되었습니다.
+          </dd>
+        </dl>
         <div class="sec_con">
           <ul class="items">
             <li>
@@ -113,11 +130,14 @@
         </div>
       </section>
       <section id="second">
-        <h3 class="sec_tit">비전</h3>
-        <p class="sec_p">
-          한국핀테크산업협회는 국민이 중심이 되는 디지털 금융 혁신에 이바지하고,<br />
-          신산업 육성으로 양질의 일자리를 제공하여 핀테크 산업의 경쟁력 향상을 목표로 합니다.
-        </p>
+        <dl>
+          <dt class="sec_tit">비전</dt>
+          <dd class="sec_p">
+            한국핀테크산업협회는 국민이 중심이 되는 디지털 금융 혁신에 이바지하고,<br />
+            신산업 육성으로 양질의 일자리를 제공하여 핀테크 산업의 경쟁력 향상을 목표로 합니다.
+          </dd>
+        </dl>
+
         <div class="sec_con">
           <div class="sub_con">
             <!--복붙-->
@@ -199,22 +219,24 @@
       </section>
     </main>
     <footer>
-      <div class="back_to_top">
-        <a href="#header"><img src="./img/button-floating-top.png" alt="backToTop_icon" /></a>
-      </div>
+      <a href="#header" class="back_to_top"><img src="./img/button-floating-top.png" alt="backToTop_icon" /></a>
       <div class="footer_inner">
         <div class="left">
-          <ul class="information">
-            <li><address>서울시 영등포구 의사당대로 83 오투타워 4층 105호</address></li>
-            <li><address class="tel">02 -587 -2661</address></li>
-            <li><address class="email">korfin@korfin.kr</address></li>
-          </ul>
+          <address class="information">
+            <p>서울시 영등포구 의사당대로 83 오투타워 4층 105호</p>
+            <p><a href="tel:02 -587 -2661">02 -587 -2661</a></p>
+            <p><a href="mailto:korfin@korfin.kr">korfin@korfin.kr</a></p>
+          </address>
           <div class="copyrights">Copyright © 2016. (사)한국핀테크산업협회. All Right Reserved.</div>
         </div>
         <div class="right">
-          <select name="institution" id="cooperation">
-            <option value="introduce">협력기관소개</option>
-          </select>
+          <div class="cooperation">협력기관소개</div>
+          <ul class="cooperation_list">
+            <li><a href="#">금융위원회</a></li>
+            <li><a href="#">한국핀테크지원센터</a></li>
+            <li><a href="#">금융위원회</a></li>
+            <li><a href="#">한국핀테크지원센터</a></li>
+          </ul>
         </div>
       </div>
     </footer>

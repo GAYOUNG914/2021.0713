@@ -13,14 +13,14 @@
   </head>
   <body>
     <div class="main_banner main_banner2">
-      <header class="header_member">
+      <header id="header" class="header_member">
         <h1>
           <a href="#"><img src="./img/korfin-logo-black-pc.png" alt="top_logo" /></a>
         </h1>
         <nav>
           <ul class="nav">
             <li>
-              <a href="./index_about.html">MEMBER</a>
+              <a href="./index_about.html">ABOUT</a>
               <ul class="sub_gnb">
                 <li><a href="#">협회장 인사말</a></li>
                 <li><a href="#">설립목적 및 비전</a></li>
@@ -37,13 +37,13 @@
           </ul>
         </nav>
         <div class="switch_lang">
-          <span>KR</span>
+          <span><a href="#">KR</a></span>
           <span></span>
-          <span>EN</span>
+          <span><a href="#">EN</a></span>
         </div>
       </header>
       <div class="sub_gnb_bg"></div>
-      <h2 class="page_title">about</h2>
+      <h2 class="page_title">MEMBER</h2>
     </div>
     <main>
       <section id="first">
@@ -257,8 +257,8 @@
             <div class="banner banner4">
               <h4 class="banner_tit">회원가입절차</h4>
             </div>
-            <div class="process">
-              <div class="row_pro">
+            <ul class="process">
+              <li class="row_pro">
                 <!--복붙-->
                 <div class="left">
                   <div class="row_img">
@@ -273,12 +273,17 @@
                     회원가입신청 서류 사본을 협회 제출처로 전달하여야 한다.
                   </dd>
                   <dl class="process_add">
-                      <dt>제출서류<br>제출처</dt>
-                      <dd>회원가입신청서, 사업자등록증, 법인등기부등본, 각 1부 및 로고AI 파일 제출<br>korfin@korfin.kr</td>
+                    <dt>제출서류<br />제출처</dt>
+                    <dd>
+                      회원가입신청서, 사업자등록증, 법인등기부등본, 각 1부 및 로고AI 파일 제출<br /><a
+                        href="mailto:korfin@korfin.kr"
+                        >korfin@korfin.kr</a
+                      >
+                    </dd>
                   </dl>
                 </dl>
-              </div>
-              <div class="row_pro">
+              </li>
+              <li class="row_pro">
                 <!--복붙-->
                 <div class="left">
                   <div class="row_img">
@@ -293,8 +298,8 @@
                     필요한 경우에 추가 서류의 제출을 요청할 수 있다.
                   </dd>
                 </dl>
-              </div>
-              <div class="row_pro">
+              </li>
+              <li class="row_pro">
                 <!--복붙-->
                 <div class="left">
                   <div class="row_img">
@@ -306,8 +311,8 @@
                   <dt class="text_tit">결과통지</dt>
                   <dd class="text_p">협회는 가입심사 결과 및 회비 안내를 진행해야 한다.</dd>
                 </dl>
-              </div>
-              <div class="row_pro">
+              </li>
+              <li class="row_pro">
                 <!--복붙-->
                 <div class="left">
                   <div class="row_img">
@@ -321,12 +326,12 @@
                     회원으로 가입하려는 자는 안내된 계좌로 가입비 및 연회비를 기한 내에 납부하여야 한다.
                   </dd>
                   <dl class="process_add">
-                      <dt>계좌정보<br>예금주</dt>
-                      <dd>기업은행 534-027949-01-024<br>사단법인 한국핀테크산업협회</dd>
+                    <dt>계좌정보<br />예금주</dt>
+                    <dd>기업은행 534-027949-01-024<br />사단법인 한국핀테크산업협회</dd>
                   </dl>
                 </dl>
-              </div>
-              <div class="row_pro">
+              </li>
+              <li class="row_pro">
                 <!--복붙-->
                 <div class="left">
                   <div class="row_img">
@@ -341,34 +346,36 @@
                     분과 가입안내 사항을 전달한다.
                   </dd>
                   <div class="process_add">
-                      <p>회원제도 안내 업무 담당자 (사무처 기획실)</p>
-                      <p>T. 02-587-2661</p>
-                      <p>E. korfin@korfin.kr</p>
+                    <p>회원제도 안내 업무 담당자 (사무처 기획실)</p>
+                    <p><a href="tel:02-587-2661">T. 02-587-2661</a></p>
+                    <p><a href="mailto:korfin@korfin.kr">E. korfin@korfin.kr</a></p>
                   </div>
                 </dl>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
     </main>
     <footer>
-      <div class="back_to_top">
-        <a href="#header"><img src="./img/button-floating-top.png" alt="backToTop_icon" /></a>
-      </div>
+      <a href="#header" class="back_to_top"><img src="./img/button-floating-top.png" alt="backToTop_icon" /></a>
       <div class="footer_inner">
         <div class="left">
-          <ul class="information">
-            <li><address>서울시 영등포구 의사당대로 83 오투타워 4층 105호</address></li>
-            <li><address class="tel">02 -587 -2661</address></li>
-            <li><address class="email">korfin@korfin.kr</address></li>
-          </ul>
+          <address class="information">
+            <p>서울시 영등포구 의사당대로 83 오투타워 4층 105호</p>
+            <p><a href="tel:02 -587 -2661">02 -587 -2661</a></p>
+            <p><a href="mailto:korfin@korfin.kr">korfin@korfin.kr</a></p>
+          </address>
           <div class="copyrights">Copyright © 2016. (사)한국핀테크산업협회. All Right Reserved.</div>
         </div>
         <div class="right">
-          <select name="institution" id="cooperation">
-            <option value="introduce">협력기관소개</option>
-          </select>
+          <div class="cooperation">협력기관소개</div>
+          <ul class="cooperation_list">
+            <li><a href="#">금융위원회</a></li>
+            <li><a href="#">한국핀테크지원센터</a></li>
+            <li><a href="#">금융위원회</a></li>
+            <li><a href="#">한국핀테크지원센터</a></li>
+          </ul>
         </div>
       </div>
     </footer>
