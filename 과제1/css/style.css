@@ -254,10 +254,9 @@ section#first .download li:first-child {
 
 section#first .download li a {
   font-size: 18px;
-}
-
-section#first .download li a img {
-  transform: translateY(5px);
+  background: url(../img/icon-download-pc-black.png) no-repeat;
+  height: 24px;
+  padding-left: 24px;
 }
 
 section#first .download li a span {
@@ -268,8 +267,21 @@ section#first .sec_con_member {
   margin-top: 145px;
 }
 
-section#first .sec_con_member .items li .icon .icon_bg {
+/* section#first .sec_con .items .text {
   display: inline-block;
+  padding-top: 270px;
+  width: 270px;
+  height: 270px;
+  border-radius: 100%;
+  border: 1px solid #d8d8d8;
+  background: url(../img/icon-member-01.png) center center no-repeat;
+  box-sizing: border-box;
+} */
+/*위에거는 원 너비 높이 때문에 할 수 가 없음 ㅠㅠㅠ*/
+
+section#first .sec_con_member .items li .icon {
+  display: inline-block;
+  padding-top: 270px;
   width: 270px;
   height: 270px;
   border-radius: 100%;
@@ -277,6 +289,7 @@ section#first .sec_con_member .items li .icon .icon_bg {
   background: url(../img/icon-member-01.png) center center no-repeat;
   box-sizing: border-box;
 }
+
 section#first .sec_con_member .items li:nth-of-type(2) .icon .icon_bg {
   background: url(../img/icon-member-02.png) center center no-repeat;
 }
@@ -356,12 +369,14 @@ section#second.second_member .sec_con .sub_con .banner3 {
 section#second.second_member .sec_con .sub_con .banner4 {
   background: url(../img/member/img-membership-04.png) center no-repeat;
 }
-/*icons*/
-section#second.second_member .sec_con .sub_con .items li .icon {
-  height: 128px;
-}
 
-section#second.second_member .sec_con .sub_con .items li:first-child .icon {
+/*icons*/
+
+/* section#second.second_member .sec_con .sub_con .items li .icon {
+  height: 128px;
+} */
+
+/* section#second.second_member .sec_con .sub_con .items li:first-child .text_p {
   background: url(../img/icon-benefit-01.png) center no-repeat;
 }
 
@@ -387,16 +402,45 @@ section#second.second_member .sec_con .sub_con .items li:nth-of-type(6) .icon {
 
 section#second.second_member .sec_con .sub_con .items li:nth-of-type(7) .icon {
   background: url(../img/icon-benefit-07.png) center no-repeat;
+} */
+
+section#second.second_member .sec_con .sub_con .items li:first-child {
+  background: url(../img/icon-benefit-01.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(2) {
+  background: url(../img/icon-benefit-02.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(3) {
+  background: url(../img/icon-benefit-03.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(4) {
+  background: url(../img/icon-benefit-04.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(5) {
+  background: url(../img/icon-benefit-05.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(6) {
+  background: url(../img/icon-benefit-06.png) center top no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .items li:nth-of-type(7) {
+  background: url(../img/icon-benefit-07.png) center top no-repeat;
 }
 
 section#second.second_member .sec_con .sub_con .items li {
   height: 477px;
-  padding: 100px 0;
+  padding-top: 204px;
   box-sizing: border-box;
+  margin-top: 91px;
 }
 
-section#second.second_member .sec_con .items .text .text_p {
-  margin-top: 76px;
+section#second.second_member .sec_con .items .text_p {
+  margin-top: 0;
 }
 
 section#second.second_member .sec_con .sub_con .description_banner3 .row .row_text {
@@ -427,7 +471,6 @@ section#second.second_member .sec_con .sub_con .process {
 
 section#second.second_member .sec_con .sub_con .process .row_pro {
   width: 100%;
-  overflow: hidden;
   margin-top: 130px;
 }
 
@@ -437,20 +480,11 @@ section#second.second_member .sec_con .sub_con .process .row_pro:after {
   clear: both;
 }
 
-section#second.second_member .sec_con .sub_con .process .row_pro .left {
-  width: 20%;
-  float: left;
-}
-
 section#second.second_member .sec_con .sub_con .process .row_pro .left .des {
   text-align: center;
   font-size: 24px;
   font-weight: bold;
-}
-
-section#second.second_member .sec_con .sub_con .process .row_pro .left .row_img {
-  display: inline-block;
-  text-align: center;
+  margin-top: 128px;
 }
 
 section#second.second_member .sec_con .sub_con .process .row_pro .right {
@@ -502,7 +536,7 @@ section#second.second_member .sec_con .sub_con .process .row_pro .right .process
 }
 
 /*second_member banner4 right icons*/
-section#second.second_member .sub_con .process .row_pro .left .row_img .icon {
+/* section#second.second_member .sub_con .process .row_pro .left .row_img .icon {
   width: 128px;
   height: 128px;
 }
@@ -525,4 +559,36 @@ section#second.second_member .sub_con .process .row_pro:nth-of-type(4) .left .ro
 
 section#second.second_member .sub_con .process .row_pro:nth-of-type(5) .left .row_img .icon {
   background: url(../img/icon-join-05.png) center no-repeat;
+} */
+
+section#second.second_member .sub_con .process .row_pro .left {
+  height: 128px;
 }
+
+section#second.second_member .sub_con .process .row_pro:first-child .left {
+  background: url(../img/icon-join-01.png) center no-repeat;
+}
+
+section#second.second_member .sub_con .process .row_pro:nth-of-type(2) .left {
+  background: url(../img/icon-join-02.png) center no-repeat;
+}
+
+section#second.second_member .sub_con .process .row_pro:nth-of-type(3) .left {
+  background: url(../img/icon-join-03.png) center no-repeat;
+}
+section#second.second_member .sub_con .process .row_pro:nth-of-type(4) .left {
+  background: url(../img/icon-join-04.png) center no-repeat;
+}
+section#second.second_member .sub_con .process .row_pro:nth-of-type(5) .left {
+  background: url(../img/icon-join-05.png) center no-repeat;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .left {
+  width: 20%;
+  float: left;
+}
+
+/* section#second.second_member .sec_con .sub_con .process .row_pro .left .row_img {
+  display: inline-block;
+  text-align: center;
+} */
