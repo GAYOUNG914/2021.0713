@@ -50,7 +50,7 @@ select {
 html,
 body {
   height: 100%;
-  min-width: 1400px;
+  /* overflow-x: hidden; */
 }
 
 body {
@@ -104,8 +104,10 @@ section#first .sec_con {
   margin-top: 130px;
 }
 
-section#first .sec_con .items > li {
+section#first .sec_con .items > li,
+section#second .sec_con .sub_con .items li {
   width: 50%;
+  padding-top: 128px;
 }
 
 section#first .sec_con .items > li:nth-of-type(3),
@@ -113,24 +115,20 @@ section#first .sec_con .items > li:nth-of-type(4) {
   margin-top: 100px;
 }
 
-section#first.first_about .sec_con .items > li:first-child .icon {
-  height: 128px;
-  background: url(../img/icon-found-01.png) center no-repeat;
+section#first.first_about .sec_con .items > li:first-child {
+  background: url(../img/icon-found-01.png) center top no-repeat;
 }
 
-section#first.first_about .sec_con .items > li:nth-of-type(2) .icon {
-  height: 128px;
-  background: url(../img/icon-found-02.png) center no-repeat;
+section#first.first_about .sec_con .items > li:nth-of-type(2) {
+  background: url(../img/icon-found-02.png) center top no-repeat;
 }
 
-section#first.first_about .sec_con .items > li:nth-of-type(3) .icon {
-  height: 128px;
-  background: url(../img/icon-found-03.png) center no-repeat;
+section#first.first_about .sec_con .items > li:nth-of-type(3) {
+  background: url(../img/icon-found-03.png) center top no-repeat;
 }
 
-section#first.first_about .sec_con .items > li:nth-of-type(4) .icon {
-  height: 128px;
-  background: url(../img/icon-found-04.png) center no-repeat;
+section#first.first_about .sec_con .items > li:nth-of-type(4) {
+  background: url(../img/icon-found-04.png) center top no-repeat;
 }
 
 /*second section*/
@@ -142,23 +140,25 @@ section#second .sec_con .sub_con:last-child {
   margin-top: 160px;
 }
 
-section#second .sec_con .sub_con .banner {
+/*banner*/
+
+.banner {
   position: relative;
   max-width: 1630px;
   height: 459px;
   background: url(../img/img-vision-01.png) center no-repeat;
 }
 
-section#second .sec_con .sub_con .banner1 {
+.banner1 {
   margin-right: -280px;
 }
 
-section#second .sec_con .sub_con .banner2 {
+.banner2 {
   background: url(../img/img-vision-02.png) center no-repeat;
   margin-left: -280px;
 }
 
-section#second .sec_con .sub_con .banner .banner_tit {
+.banner .banner_tit {
   position: absolute;
   bottom: 0;
   color: #111;
@@ -166,11 +166,11 @@ section#second .sec_con .sub_con .banner .banner_tit {
   line-height: 1.5;
 }
 
-section#second .sec_con .sub_con .banner1 .banner_tit {
+.banner1 .banner_tit {
   left: 551px;
 }
 
-section#second .sec_con .sub_con .banner2 .banner_tit {
+.banner2 .banner_tit {
   left: 459px;
 }
 
@@ -180,40 +180,35 @@ section#second .sec_con .sub_con .items {
 
 section#second .sec_con .sub_con .items li {
   width: 33.3%;
+  padding-top: 128px;
 }
 
 /*이용자가 중심이되는 디지털 금융 혁신*/
 
-section#second .sec_con .sub_con:first-child .items li:first-child .icon {
-  height: 128px;
-  background: url(../img/icon-vision-01.png) center no-repeat;
+section#second .sec_con .sub_con:first-child .items li:first-child {
+  background: url(../img/icon-vision-01.png) center top no-repeat;
 }
 
-section#second .sec_con .sub_con:first-child .items li:nth-of-type(2) .icon {
-  height: 128px;
-  background: url(../img/icon-vision-02.png) center no-repeat;
+section#second .sec_con .sub_con:first-child .items li:nth-of-type(2) {
+  background: url(../img/icon-vision-02.png) center top no-repeat;
 }
 
-section#second .sec_con .sub_con:first-child .items li:nth-of-type(3) .icon {
-  height: 128px;
-  background: url(../img/icon-vision-03.png) center no-repeat;
+section#second .sec_con .sub_con:first-child .items li:nth-of-type(3) {
+  background: url(../img/icon-vision-03.png) center top no-repeat;
 }
 
 /*창의적이고 역동적인 핀테크 생태계 조성*/
 
-section#second .sec_con .sub_con:nth-of-type(2) .items li:first-child .icon {
-  height: 128px;
-  background: url(../img/icon-ecosystem-01.png) center no-repeat;
+section#second .sec_con .sub_con:nth-of-type(2) .items li:first-child {
+  background: url(../img/icon-ecosystem-01.png) center top no-repeat;
 }
 
-section#second .sec_con .sub_con:nth-of-type(2) .items li:nth-of-type(2) .icon {
-  height: 128px;
-  background: url(../img/icon-ecosystem-02.png) center no-repeat;
+section#second .sec_con .sub_con:nth-of-type(2) .items li:nth-of-type(2) {
+  background: url(../img/icon-ecosystem-02.png) center top no-repeat;
 }
 
-section#second .sec_con .sub_con:nth-of-type(2) .items li:nth-of-type(3) .icon {
-  height: 128px;
-  background: url(../img/icon-ecosystem-03.png) center no-repeat;
+section#second .sec_con .sub_con:nth-of-type(2) .items li:nth-of-type(3) {
+  background: url(../img/icon-ecosystem-03.png) center top no-repeat;
 }
 /*index_member page start*/
 /*index content(main)*/
@@ -487,9 +482,14 @@ section#second.second_member .sec_con .sub_con .process .row_pro .left .des {
   margin-top: 128px;
 }
 
+section#second.second_member .sec_con .sub_con .process .row_pro .left {
+  width: 25%;
+  float: left;
+}
+
 section#second.second_member .sec_con .sub_con .process .row_pro .right {
   /* width: clac(100% - 230px); */
-  width: 80%;
+  width: 75%;
   float: left;
 }
 
@@ -511,6 +511,10 @@ section#second.second_member .sec_con .sub_con .process .row_pro .right .process
   box-sizing: border-box;
   padding: 30px;
   margin-top: 36px;
+}
+
+section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add > a {
+  display: block;
 }
 
 section#second.second_member .sec_con .sub_con .process .row_pro .right .process_add:after {
@@ -535,32 +539,6 @@ section#second.second_member .sec_con .sub_con .process .row_pro .right .process
   float: left;
 }
 
-/*second_member banner4 right icons*/
-/* section#second.second_member .sub_con .process .row_pro .left .row_img .icon {
-  width: 128px;
-  height: 128px;
-}
-
-section#second.second_member .sub_con .process .row_pro:first-child .left .row_img .icon {
-  background: url(../img/icon-join-01.png) center no-repeat;
-}
-
-section#second.second_member .sub_con .process .row_pro:nth-of-type(2) .left .row_img .icon {
-  background: url(../img/icon-join-02.png) center no-repeat;
-}
-
-section#second.second_member .sub_con .process .row_pro:nth-of-type(3) .left .row_img .icon {
-  background: url(../img/icon-join-03.png) center no-repeat;
-}
-
-section#second.second_member .sub_con .process .row_pro:nth-of-type(4) .left .row_img .icon {
-  background: url(../img/icon-join-04.png) center no-repeat;
-}
-
-section#second.second_member .sub_con .process .row_pro:nth-of-type(5) .left .row_img .icon {
-  background: url(../img/icon-join-05.png) center no-repeat;
-} */
-
 section#second.second_member .sub_con .process .row_pro .left {
   height: 128px;
 }
@@ -581,11 +559,6 @@ section#second.second_member .sub_con .process .row_pro:nth-of-type(4) .left {
 }
 section#second.second_member .sub_con .process .row_pro:nth-of-type(5) .left {
   background: url(../img/icon-join-05.png) center no-repeat;
-}
-
-section#second.second_member .sec_con .sub_con .process .row_pro .left {
-  width: 20%;
-  float: left;
 }
 
 /* section#second.second_member .sec_con .sub_con .process .row_pro .left .row_img {

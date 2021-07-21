@@ -17,7 +17,7 @@
 
 header {
   overflow: hidden;
-  width: 1340px;
+  max-width: 1340px;
   margin: 0 auto;
   height: 90px;
   line-height: 90px;
@@ -93,7 +93,7 @@ header nav .nav > li > a {
   height: 100%;
 }
 
-header nav .nav > li > a:after {
+/* header nav .nav > li > a:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -104,7 +104,7 @@ header nav .nav > li > a:after {
   height: 2px;
   background: #fff;
   transition: 0.3s;
-}
+} */
 
 header nav .nav > li.on > a:after {
   opacity: 1;
@@ -119,6 +119,21 @@ header .switch_lang {
   color: white;
   font-size: 18px;
   font-weight: bold;
+}
+
+/*under_bar*/
+.under_bar {
+  position: absolute;
+  width: 100px;
+  top: 88px;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+  opacity: 0;
+}
+
+.under_bar.on {
+  opacity: 1;
 }
 
 /*.sub_gnb*/
@@ -227,7 +242,7 @@ header .switch_lang span:last-child a {
 }
 
 .main_banner .page_title {
-  width: 1340px;
+  max-width: 1340px;
   margin: 0 auto;
   font-size: 96px;
   font-weight: bold;
@@ -248,10 +263,14 @@ footer .back_to_top {
   position: absolute;
   top: -32px;
   right: 40px;
+  width: 64px;
+  height: 64px;
+  background: url(../img/button-floating-top.png) center no-repeat;
+  font-size: 0;
 }
 
 footer .footer_inner {
-  width: 1340px;
+  max-width: 1340px;
   margin: 0 auto;
 }
 
@@ -272,13 +291,14 @@ footer .footer_inner .left {
 }
 
 footer .footer_inner .left .information p,
-footer .footer_inner .left .information p a {
+footer .footer_inner .left .information a {
   color: #fff;
-}
-
-footer .footer_inner .left .information p {
   margin-top: 12px;
   font-size: 18px;
+}
+
+footer .footer_inner .left .information a {
+  display: block;
 }
 
 footer .footer_inner .left .copyrights {

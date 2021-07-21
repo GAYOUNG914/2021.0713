@@ -36,12 +36,6 @@ section .sec_con .items:after {
   clear: both;
 }
 
-section .sec_con .items:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 section .sec_con .items li {
   float: left;
   margin-top: 60px;
@@ -72,7 +66,7 @@ section .sec_con .items .text_p {
   font-size: 24px;
 }
 
-section .sec_con .sub_con .banner {
+.banner {
   position: absolute;
   bottom: 0;
   color: #111;
@@ -81,7 +75,7 @@ section .sec_con .sub_con .banner {
 }
 
 section .description {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
   margin-top: 140px;
 }
@@ -98,6 +92,23 @@ section .description .row:first-child {
 
 section .description .row:last-child {
   padding: 72px 0 0 0;
+}
+
+section#second.second_member .sec_con .sub_con .description_banner3 .row .row_text.row_text_middle:last-child {
+  width: 100%;
+}
+
+section .description .row .row_text .columns {
+  overflow: hidden;
+}
+
+section .description .row .row_text .columns .column {
+  float: left;
+  width: 38%;
+}
+
+section .description .row .row_text .columns .column:last-child {
+  width: 23%;
 }
 
 section .description .row .row_text_tit,
