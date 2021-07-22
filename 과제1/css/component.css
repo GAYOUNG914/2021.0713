@@ -1,12 +1,14 @@
 /*contents(main)*/
 main {
-  max-width: 1340px;
-  margin: 0 auto;
   min-height: 100%;
 }
 
-section#first,
-section#second {
+section > dl {
+  max-width: 1340px;
+  margin: 140px auto 0;
+}
+
+section#first {
   max-width: 1340px;
   margin: 140px auto 0;
   -ms-max-width: 1340px;
@@ -23,6 +25,11 @@ section .sec_p {
   font-size: 24px;
   line-height: 1.5;
   margin-top: 40px;
+}
+
+section .sec_con .sub_con {
+  position: relative;
+  padding-top: 459px;
 }
 
 section .sec_con .items {

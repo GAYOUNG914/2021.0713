@@ -1,14 +1,13 @@
 $(function () {
   //drop down & underbar event
   $(".nav > li").mouseover(function () {
-    let leftValue = $(this).offset().left - 10;
-    let listWidth = $(this).width() + 20;
+    let leftValue = $(this).offset().left - 10,
+      listWidth = $(this).width() + 20;
     $(this).addClass("on");
     $(this).find(".sub_gnb").addClass("on");
     $(".header_bg").addClass("on");
     $(".under_bar").addClass("on");
-    $(".under_bar").css("left", leftValue);
-    $(".under_bar").css("width", listWidth);
+    $(".under_bar").css({ left: leftValue, width: listWidth });
   });
   $(".header_bg").mouseout(function () {
     $(".nav > li").removeClass("on");
@@ -30,8 +29,8 @@ $(function () {
 
   //back to top
   $(".back_to_top").click(function () {
-    let thisElem = $(this.hash);
-    let offsetElem = thisElem.offset();
+    let thisElem = $(this.hash),
+      offsetElem = thisElem.offset();
     $("html,body").stop();
     $("html,body").animate({ scrollTop: offsetElem.top }, 700);
   });

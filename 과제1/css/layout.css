@@ -224,7 +224,7 @@ header .switch_lang span:nth-of-type(2):after {
 }
 
 header .switch_lang:hover span:nth-of-type(2):after {
-  animation: switch 0.5s ease-out infinite alternate;
+  animation: switch 0.5s cubic-bezier(0.33, 1, 0.68, 1) infinite alternate;
 }
 
 @keyframes switch {
